@@ -1,15 +1,4 @@
 @font-face {
-    font-family: 'amblelight_condensed';
-    src: url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.eot');
-    src: url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.eot?#iefix') format('embedded-opentype'),
-         url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.woff2') format('woff2'),
-         url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.woff') format('woff'),
-         url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.ttf') format('truetype'),
-         url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.svg#amblelight_condensed_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'amblelight_condenseditalic';
     src: url('amble_lightcondenseditalic_macroman/Amble-LightCondenseditalic-webfont.eot');
     src: url('amble_lightcondenseditalic_macroman/Amble-LightCondenseditalic-webfont.eot?#iefix') format('embedded-opentype'),
@@ -21,24 +10,13 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'ambleregular';
-    src: url('amble_regular_macroman/Amble-Regular-webfont.eot');
-    src: url('amble_regular_macroman/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('amble_regular_macroman/Amble-Regular-webfont.woff2') format('woff2'),
-         url('amble_regular_macroman/Amble-Regular-webfont.woff') format('woff'),
-         url('amble_regular_macroman/Amble-Regular-webfont.ttf') format('truetype'),
-         url('amble_regular_macroman/Amble-Regular-webfont.svg#ambleregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face{
-    font-family: 'BallparkWeiner';
-    src: url('ballpark/ballpark.eot');
-    src: url('ballpark/ballpark.eot?#iefix') format('embedded-opentype'),
-         url('ballpark/ballpark.woff') format('woff'),
-         url('ballpark/ballpark.ttf') format('truetype'),
-         url('ballpark/ballpark.svg#BallparkWeiner') format('svg');
+    font-family: 'amblelight_condensed';
+    src: url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.eot');
+    src: url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.woff2') format('woff2'),
+         url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.woff') format('woff'),
+         url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.ttf') format('truetype'),
+         url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.svg#amblelight_condensed_italic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -53,13 +31,6 @@
     font-style: normal;
 }
 @media (max-width: 576px){
-    section{
-        flex-direction: column;
-    }
-    #fleche_bulle{
-        display: none;
-        
-    }
     header, nav ul{
         flex-direction: column;
        
@@ -70,13 +41,6 @@
     } 
 } 
 @media (min-width: 576px) and (max-width: 768px){
-    section{
-        flex-direction: column;
-    }
-    #fleche_bulle{
-        display: none;
-        
-    }
     header, nav ul{
         flex-direction: column;
        
@@ -87,16 +51,14 @@
     }  
 } 
 @media (min-width: 768px) and (max-width: 992px){
-    header{
+    header, nav ul{
+        flex-direction: column;
+       
+    } 
+    header h1{
         background-color: #FEE9BF;
         box-shadow: 15px 9px 9px #FFE6AE;
-    }
-    nav ul li{
-        margin-right: 15px;
-    }
-    nav a{
-        padding-bottom: 15px;
-    }
+    }  
 }
 @media (min-width: 992px) and (max-width: 1200px){
     header{
@@ -104,7 +66,7 @@
         box-shadow: 15px 9px 9px #FFE6AE;
     }
     nav ul li{
-        margin-right: 15px;
+        margin-right: 30px;
     }
     nav a{
         padding-bottom: 15px;
@@ -116,7 +78,7 @@
         box-shadow: 15px 9px 9px #FFE6AE;
     }
     nav ul li{
-        margin-right: 15px;
+        margin-right: 35px;
     }
     nav a{
         padding-bottom: 15px;
@@ -124,6 +86,7 @@
 }
 body{
     background-image: url('images/fond_jaune.png'); 
+    font-family: 'amble_lightcondensed';
 }
 header{
     display: flex;
@@ -134,7 +97,7 @@ header h1{
     color: #343434;
     font-family: 'amblelight_condenseditalic';
     margin-left: 13px;
-    font-size: 2.181em;
+    font-size: 2.7em;
 }
 nav ul{
     list-style-type: none;
@@ -142,9 +105,10 @@ nav ul{
 }
 nav ul li{
     font-family: 'amblelight_condensed';
+
 }
 nav a{
-    font-size: 2.1em;
+    font-size: 2em;
     color: #343434;
     text-decoration: none;
 }
@@ -153,37 +117,87 @@ nav a:hover{
     box-shadow: 6px 0px 10px white;
     font-family: 'amblelight_condenseditalic';
 }
-section{
-    display: flex;
-    margin-bottom: 20px;
+h2{
+    font-family: 'amblelight_condensed';
+    margin-left: 120px;
 }
 article{
-    margin-right: 40px;
-    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    background-color: #FEE9BF;
+    box-shadow: 15px 9px 9px #FFE6AE;
+    width: 55%;
 }
-aside h1{
-    font-family: 'dayrom';
+img{
+    margin-left: 35px;
+    margin-top: 30px;
+    margin-bottom: 35px;
 }
-aside{
-    flex-wrap: wrap;
-    position: relative;
-    background-color: #706b64;
-    box-shadow: 0px 2px 5px #1c1a19;
-    border-radius: 5px;
-    padding: 6px;
-    color: white;
-    font-size: 0.9em;
+.container{
+    display: grid;
+    grid-template-columns: 147px 147px 147px 147px;
+    grid-template-rows: 60px 60px 60px ;
+    font-size:  1.6em;
+    padding-top: 30px;
 }
-#fleche_bulle{
-    position: absolute;
-    top: 45px;
-    left: -12px;
+.container>:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(3){
+    grid-column: 3;
+    grid-row: 1;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(4){
+    grid-column: 4;
+    grid-row: 1;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(5){
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(6){
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(7){
+    grid-column: 3;
+    grid-row: 2;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(8){
+    grid-column: 4;
+    grid-row: 2;
+    justify-content: stretch;
+    border: 2px solid #181818;
 }
 footer{
     background-color: #FEE9BF;
     box-shadow: 15px 9px 9px #FFE6AE;
-    margin-top: 90px;
+    font-family: 'Dayrom';
+    font-size: 1.1em;
 }
-footer div{
-    margin-left: 127px;
+footer a{
+    text-decoration: none;
+    background-color:peru;
+    border-radius: 7px;
+    color:white;
 }
